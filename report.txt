@@ -1,0 +1,11 @@
+C:\Users\amirm\Desktop\АлгоритмыПрактика2: 0.01 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\DB\ER: 0.0 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\files_utils: 0.0 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\files_utils\__pycache__: 0.01 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\htmlcov: 0.21 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\sandbox: 0.0 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\static: 0.0 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\templates: 0.0 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\tests: 0.01 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\tests\__pycache__: 0.02 MB
+C:\Users\amirm\Desktop\АлгоритмыПрактика2\__pycache__: 0.01 MB
