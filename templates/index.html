@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>УЗНАЙ ПОГОДУ</h1>
+            <a href="{{ url_for('about') }}" class="db">Редактирование данных</a>
+        </nav>
+        <div class="form-container">
+            <form method="post">
+                <input name="city" placeholder="Введите город">
+                <button type="submit">Получить погоду</button>
+            </form>
+        </div>
+    </header>
+    <div class="result-container">
+        <div class="result">
+            {% if result %}
+                {% if result.error %}
+                    <p class="error">{{ result.error }}</p>
+                {% else %}
+                    <p class="city">🏙Город: {{ result.city }}</p>
+                    <div class="info">
+                        <p class="temp">🌡Температура: <span class="temp-nums">{{ result.temperature }}</span>°C</p>
+                        <p class="weather">Погода: <span class="inf">{{ result.description }}</span></p>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+
+</body>
+</html>

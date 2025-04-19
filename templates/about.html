@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Датабаза</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <nav>
+        <h1>Датабаза</h1>
+        <a href="{{ url_for('index') }}" class="db">Домой</a>
+    </nav>
+    <form method="get" action="{{ url_for('about') }}" class="search">
+        <input type="text" name="search" placeholder="Введите город" value="{{ request.args.get('search', '') }}">
+        <button type="submit">Найти</button>
+    </form>     
+    <div class="table-container">
+           
+        <table>
+            <tr>
+                <th>
+                    Название города
+                </th>
+                <th>
+                    Страна
+                </th>
+                <th>
+                    Температура
+                </th>
+                <th>
+                    Описание
+                </th>
+                <th>
+                    Время
+                </th>
+                <th>
+                    -
+                </th>
+            </tr>
+            {% if table %}
+                {% for city in table %}
+                    <tr>
+                        <td>
+                            {{ city.city_name }}
+                        </td>
+                        <td>
+                            {{ city.country }}
+                        </td>
+                        <td>
+                            {{ city.temperature }}
+                        </td>
+                        <td>
+                            {{ city.description }}
+                        </td>
+                        <td>
+                            {{ city.weather_time }}
+                        </td>
+                        <td>
+                            <form action="{{ url_for('delete_city') }}" method="POST">
+                                <input type="hidden" name="city_name" value="{{ city.city_name }}">
+                                <button type="submit"><span class="del">Удалить</span></button>
+                            </form>
+                        </td>                        
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </table>
+    </div>
+</body>
+</html>
