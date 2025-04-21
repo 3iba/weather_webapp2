@@ -1,0 +1,3 @@
+{
+  "tests/test_algorithms.py::test_insert_new_city_and_weather": true
+}

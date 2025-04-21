@@ -1,0 +1,17 @@
+[
+  "tests/test_algorithms.py::test_error_logged_on_exception",
+  "tests/test_algorithms.py::test_insert_new_city_and_weather",
+  "tests/test_full_database.py::test_delete_record_deletes_correct_city",
+  "tests/test_full_database.py::test_empty_city_name",
+  "tests/test_full_database.py::test_get_weather_table_data_returns_correct_data",
+  "tests/test_full_database.py::test_invalid_temperature_type",
+  "tests/test_full_database.py::test_max_temperature",
+  "tests/test_full_database.py::test_negative_temperature_raises_value_error",
+  "tests/test_full_database.py::test_valid_input",
+  "tests/test_logging.py::test_logging_on_network_error",
+  "tests/test_weather_api.py::test_get_weather_city_not_found",
+  "tests/test_weather_api.py::test_get_weather_empty_data",
+  "tests/test_weather_api.py::test_get_weather_invalid_api_key",
+  "tests/test_weather_api.py::test_get_weather_network_error",
+  "tests/test_weather_api.py::test_get_weather_valid_data"
+]
